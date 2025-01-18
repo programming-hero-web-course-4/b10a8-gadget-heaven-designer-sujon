@@ -1,18 +1,19 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Banner from "../components/Banner";
 
 const HomeLayout = () => {
   return (
     <div>
-      <header className="max-w-7xl mx-auto h-[550px] bg-[#9538E2] rounded-xl">
+      <header className="max-w-7xl mx-auto h-[570px] bg-[#9538E2] rounded-xl relative">
         <nav className="max-w-6xl mx-auto py-2">
           <Navbar></Navbar>
         </nav>
         <section className="flex flex-col justify-center items-center">
-          <h1 className="text-5xl text-white font-bold text-center max-w-4xl mt-6 mx-auto">
+          <h1 className="text-5xl text-white font-bold text-center max-w-4xl mt-6 mx-auto leading-snug">
             Upgrade Your Tech Accessorize with Gadget Heaven Accessories
           </h1>
-          <p className="text-white mt-6 max-w-2xl mx-auto text-center">
+          <p className="text-white mt-6 max-w-2xl mx-auto text-center text-lg">
             Explore the latest gadgets that will take your experience to the
             next level. From smart devices to the coolest accessories, we have
             it all!
@@ -22,6 +23,9 @@ const HomeLayout = () => {
           </button>
         </section>
       </header>
+      <div className="absolute top-96 left-40 mt-8">
+        <Banner></Banner>
+      </div>
       <h1>Home Layout</h1>
     </div>
   );
