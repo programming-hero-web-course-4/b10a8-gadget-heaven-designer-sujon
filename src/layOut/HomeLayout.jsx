@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
+import Footer from "../components/Footer";
 
 const HomeLayout = () => {
   return (
@@ -18,15 +19,20 @@ const HomeLayout = () => {
             next level. From smart devices to the coolest accessories, we have
             it all!
           </p>
-          <button className="bg-white px-4 py-2 mt-6 text-[#9538E2] rounded-full text-center ">
+          <button className="bg-white px-4 py-2 mt-6 text-[#9538E2] rounded-full text-center font-bold hover:bg-gray-200 ">
             Shop Now
           </button>
+          <div className="absolute top-96 left-40 mt-8">
+            <Banner></Banner>
+          </div>
         </section>
       </header>
-      <div className="absolute top-96 left-40 mt-8">
-        <Banner></Banner>
-      </div>
-      <h1>Home Layout</h1>
+      <main className="">
+        <h1 className="text-center">Explore Cutting-Edge Gadgets</h1>
+      </main>
+      <footer className="mt-96">
+        <Footer></Footer>
+      </footer>
     </div>
   );
 };
