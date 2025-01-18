@@ -1,5 +1,7 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { FaRegHeart } from "react-icons/fa";
+import { IoCartOutline, IoHeartDislikeCircleOutline } from "react-icons/io5";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const navLinks = (
@@ -43,13 +45,18 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl text-white">Gadget Heaven</a>
+          <a className="btn btn-ghost text-2xl text-white">Gadget Heaven</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <Link className="bg-white rounded-full p-2 text-lg">
+            <IoCartOutline />
+          </Link>
+          <Link className="bg-white rounded-full p-2 text-lg ml-4">
+            <FaRegHeart />
+          </Link>
         </div>
       </div>
     </div>
