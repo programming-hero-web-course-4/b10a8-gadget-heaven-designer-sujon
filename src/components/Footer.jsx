@@ -2,29 +2,35 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
-      <footer className="footer bg-base-200 text-base-content p-10">
-        <nav>
-          <h6 className="footer-title">Services</h6>
-          <a className="link link-hover">Branding</a>
-          <a className="link link-hover">Design</a>
-          <a className="link link-hover">Marketing</a>
-          <a className="link link-hover">Advertisement</a>
-        </nav>
-        <nav>
-          <h6 className="footer-title">Company</h6>
-          <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Jobs</a>
-          <a className="link link-hover">Press kit</a>
-        </nav>
-        <nav>
-          <h6 className="footer-title">Legal</h6>
-          <a className="link link-hover">Terms of use</a>
-          <a className="link link-hover">Privacy policy</a>
-          <a className="link link-hover">Cookie policy</a>
-        </nav>
-      </footer>
+    <div className="bg-white">
+      <div className=" py-6">
+        <h1 className="text-center text-3xl font-bold">Gadget Heaven</h1>
+        <p className="text-center mt-2">
+          Leading the way in cutting-edge technology and innovation.
+        </p>
+        <hr className="mt-4" />
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3">
+        <div className="flex flex-col justify-center items-center gap-1">
+          <h2 className="font-semibold text-2xl mb-4">Services</h2>
+          <p className="text-lg text-gray-600 ">Product Support</p>
+          <p className="text-lg text-gray-600 ">Order Tracking</p>
+          <p className="text-lg text-gray-600 ">Shipping & Delivery</p>
+          <p className="text-lg text-gray-600 ">Returns</p>
+        </div>
+        <div className="flex flex-col justify-center items-center gap-1">
+          <h2 className="font-semibold text-2xl mb-4">Company</h2>
+          <p className="text-lg text-gray-600 ">About Us</p>
+          <p className="text-lg text-gray-600 ">Career</p>
+          <p className="text-lg text-gray-600 ">Contacts</p>
+        </div>
+        <div className="flex flex-col justify-center items-center gap-1">
+          <h2 className="font-semibold text-2xl mb-4">Legal</h2>
+          <p className="text-lg text-gray-600 ">Terms of Service</p>
+          <p className="text-lg text-gray-600 ">Privacy Policy</p>
+          <p className="text-lg text-gray-600 ">Cookie Policy</p>
+        </div>
+      </div>
     </div>
   );
 };
