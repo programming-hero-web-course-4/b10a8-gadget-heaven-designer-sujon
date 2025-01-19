@@ -51,10 +51,10 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
         <div className="navbar-end">
-          <Link className="bg-white rounded-full p-2 text-lg">
+          <Link className="bg-white rounded-full p-2 text-lg border-gray-100">
             <IoCartOutline />
           </Link>
-          <Link className="bg-white rounded-full p-2 text-lg ml-4">
+          <Link className="bg-white rounded-full p-2 text-lg ml-4 border-gray-100">
             <FaRegHeart />
           </Link>
         </div>
