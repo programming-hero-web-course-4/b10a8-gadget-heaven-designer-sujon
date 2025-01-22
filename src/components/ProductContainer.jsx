@@ -12,7 +12,7 @@ const ProductContainer = () => {
       <div className="max-w-6xl mx-auto grid grid-cols-4 gap-6 mt-10 mb-10">
       <div className="bg-white border-gray-200 h-60 grid col-span-1 rounded-xl">
       {
-        products.map(product=> <btn></btn>)
+        products.category.map(product=> (<btn className="btn">{product}</btn>))
       }
       </div>
       <div className="bg-red-200 col-span-3 rounded-xl">
